@@ -14,7 +14,7 @@ class DeleteProfileViewController: UIViewController {
         view.backgroundColor = .systemBackground
         title = "Delete Profile"
         
-        goHomeButton()
+        goToProfileButton()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -27,7 +27,7 @@ class DeleteProfileViewController: UIViewController {
         navigationController?.setNavigationBarHidden(false, animated: animated)
     }
     
-    private func goHomeButton() {
+    private func goToProfileButton() {
         let button = UIButton(type: .system)
         button.setTitle("Go to Profile", for: .normal)
         button.addTarget(self, action: #selector(navigateToProfile), for: .touchUpInside)
