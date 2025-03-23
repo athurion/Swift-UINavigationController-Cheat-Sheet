@@ -21,10 +21,10 @@ class EditProfileViewController: UIViewController {
     private func navigationItem() {
         navigationItem.hidesBackButton = true
         navigationItem.rightBarButtonItem = UIBarButtonItem(
-            title: "Edit",
+            title: "Delete",
             style: .plain,
             target: self,
-            action: #selector(navigateToEditProfile)
+            action: #selector(navigateToDeleteProfile)
         )
     }
     
@@ -46,7 +46,7 @@ class EditProfileViewController: UIViewController {
         navigationController?.popToRootViewController(animated: true)
     }
     
-    @objc func navigateToEditProfile() {
+    @objc func navigateToDeleteProfile() {
         let deleteProfileVC = DeleteProfileViewController()
         navigationController?.pushViewController(deleteProfileVC, animated: true)
     }
